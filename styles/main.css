@@ -145,3 +145,12 @@ code {
   .blog-index a:hover {
     background-color: #2b64a9;
     color: white;
+  }
+a {
+  color: #2b64a9;
+  text-decoration: none;
+}
+a:hover {
+    color: #2b64a9;
+    text-decoration: underline;
+}

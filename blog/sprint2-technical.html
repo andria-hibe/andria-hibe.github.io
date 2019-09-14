@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andria Hibe </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel='icon' href='../favicon.ico' type='image/x-icon'>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+13px&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="topnav">
+        <a href="https://andria-hibe.github.io">Home</a>
+        <a class="active" href="https://andria-hibe.github.io/blog/technical-blog-index">Technical Blog</a>
+        <a href="https://andria-hibe.github.io/blog/cultural-blog-index">Cultural Blog</a>
+    </div>
+
+  <div id="hero-header">
+    <h1 class="hero-text">Andria Hibe</h1>
+      <p class="hero-paragraph">DevAcademy Foundations Blog</p>
+  </div>
+
+  <div id="content">
+    <h1>Differences between relative, absolute, and fixed positioning in CSS</h1>
+    <h3>12 September 2019</h3>
+    <p>
+        The <code>position</code> property in CSS allows us to define how an element, such as images, text, and videos, will be displayed in a document. This allows us to position elements out of the <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow" target="_blank">normal document flow</a> and make them behave the way we want them to such as stacking one on top of the other or making them remain in the same place inside the browser no matter if the page is scrolled.
+    </p>
+
+    <p>
+        This allows us make more interesting layouts work and gives us more tools to make a document look the way we want it to.
+    </p>
+        
+    <p>
+        We will be looking at the differences between the <code>position</code> values <code>relative</code>, <code>absolute</code>, and <code>fixed</code> as well as how we can use the attributes <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code> to specify where exactly we want the element to be.
+    </p>
+    <br>
+    <h2>Relative Position</h2>
+    <p>
+        <code>position: relative</code> allows us to position an element relative to its default position, that is, its position based on the normal document flow.
+    </p>
+
+    <p>
+        Using only <code>position: relative</code> will merely make the element act as if it's static as we have not told it yet what position relative to its default position we want it to move.
+    </p>
+    <p>
+        This is why we need the <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> attributes to specify the vertical and horizontal offset of the element relative to its default position.
+    </p>
+
+    <p>
+        For example, putting <code>right: 10px</code> means that our element is now 10 pixels from the right relative to its default position. Another way to think of this is that our element has been pushed on its right side towards the left by 10 pixels. Similary, <code>top: 10px</code> will push our element on its top side towards the bottom by 10 pixels.
+    </p>
+    <br>   
+    <h2>Absolute Position</h2>
+    <p>
+        <code>position: absolute</code> allows us to position an element relative to its nearest positioned parent, that is a parent that also has non-static <code>position</code> attribute. If there are no positioned parent elements, then the HTML element, meaning the page itself, will be its parent.
+    </p>
+    <p>
+        The <code>absolute</code> position takes the element outside of the normal document flow and by default, places it in front of where it was previously. By taking the element out of the normal document flow, other elements will behave as if the element has been deleted from the webpage. This means that the space it used to occupy will then be taken up by the elements that are rendered after it, provided that these elements are following the normal document flow.
+    </p>
+    <p>
+        By using the <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> attributes, we can specify the distance from the parent's sides we want our element to be positioned in.
+    </p>
+    <p>
+        This means that putting <code>right: 10px</code> will place our element 10 pixels from the right side of its parent element. Similary, <code>top: 10px</code> will position our element 10 pixels away from the parent element's bottom side.
+    </p>
+    <br>
+    <h2>Fixed Position</h2>
+    <p>
+        <code>position: fixed</code> allows us to position an element relative to the viewport, which is the visible area of a web page that we see on our browsers. This means that the element will stay in the same position even when the page is scrolled.
+    </p>
+    <p>
+        <code>position: fixed</code> works quite similar with <code>position: absolute</code> in that it takes the element out of the normal document flow and by default, places it in front of where it was previously with the space the element left behind being taken up by the elements that are rendered after it, provided that these elements are following the normal document flow.
+    </p>
+    <p>
+        The main difference is that since the element is now fixed in its position relative to the viewport, it will be visible in our browser or screen no matter how much we scroll unlike with elements with <code>position: absolute</code> which will become out of view once you scroll past it.
+    </p>
+    <p>
+        Using the <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> attributes allows us to specify the distance from the viewport's we want our element to be positioned in.
+    </p>
+    <p>
+        This means that putting <code>right: 10px</code> will place our element 10 pixels from the right side of the viewport and fixes it there. Similary, <code>top: 10px</code> will position our element 10 pixels away from the bottom side of the viewport.
+    </p>
+    <br>
+    <h2>
+        See it in action
+    </h2>
+    <p>
+        Below is a codepen to show the differences between the <code>relative</code>,<code>absolute</code>, and <code>fixed</code> positions.
+    </p>
+    <p>
+        Click the buttons to change the <code>position</code> of the orange box and see what it would look like in these positions at <code>right: 10px</code>.
+        All other sides are set at <code>0px</code> to make it simpler and easier to see the differences.
+        Note that the grey box is the parent element of the orange box and the entirety of the white space of the codepen is the viewport.
+    </p>
+    <p>
+        The default is <code>static</code> and what it would look like if the orange box is following the normal document flow.
+        Both the pink and blue boxes are <code>static</code> so you can see how the blue box moves upwards once you take the orange box out of the normal document flow by clicking either the <code>absolute</code> or <code>fixed</code> buttons.
+    </p>
+    <p class="codepen" data-height="655" data-theme-id="dark" data-default-tab="result" data-user="andria-hibe" data-slug-hash="eYOjOvq" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Relative, Absolute, and Fixed Positioning">
+            <span>See the Pen <a href="https://codepen.io/andria-hibe/pen/eYOjOvq/">
+            Relative, Absolute, and Fixed Positioning</a> by Andria Hibe (<a href="https://codepen.io/andria-hibe">@andria-hibe</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+  </div>
+
+    <div id="footer">
+        <a href=mailto:andriacohibe@gmail.com>
+            <img class="images" src="../images/paper-plane-solid.svg" alt="Email icon"></a>
+        <a href=https://github.com/andria-hibe target="_blank">
+            <img class="images" src="../images/github-alt-brands.svg" alt="GitHub icon"></a>
+        <a href=https://www.linkedin.com/in/andriacristiahibe/ target="_blank">
+            <img class="images" src="../images/linkedin-brands.svg" alt="LinkedIn icon"></a>
+    </div> 
+        
+</body>
+</html>
