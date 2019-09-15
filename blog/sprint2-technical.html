@@ -58,16 +58,16 @@
     <br>   
     <h2>Absolute Position</h2>
     <p>
-        <code>position: absolute</code> allows us to position an element relative to its nearest positioned parent, that is a parent that also has non-static <code>position</code> attribute. If there are no positioned parent elements, then the HTML element, meaning the page itself, will be its parent.
+        <code>position: absolute</code> allows us to position an element relative to its nearest positioned parent, that is a parent that has either a <code>relative</code> or <code>absolute</code> position attribute. If there are such positioned parent elements, then the HTML element, meaning the page itself, will be its parent.
     </p>
     <p>
-        The <code>absolute</code> position takes the element outside of the normal document flow and by default, places it in front of where it was previously. By taking the element out of the normal document flow, other elements will behave as if the element has been deleted from the webpage. This means that the space it used to occupy will then be taken up by the elements that are rendered after it, provided that these elements are following the normal document flow.
+        The <code>absolute</code> position takes the element outside of the normal document flow and by default, places it in front of where it was previously. By taking the element out of the normal document flow, other elements will behave as if the element is not there. This means that the space it would have occupied will be taken up by the elements that are rendered after it, provided that these elements are following the normal document flow.
     </p>
     <p>
         By using the <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> attributes, we can specify the distance from the parent's sides we want our element to be positioned in.
     </p>
     <p>
-        This means that putting <code>right: 10px</code> will place our element 10 pixels from the right side of its parent element. Similary, <code>top: 10px</code> will position our element 10 pixels away from the parent element's bottom side.
+        This means that putting <code>right: 10px</code> will place our element 10 pixels from the right side of the closest parent element with a <code>relative</code> or <code>absolute</code> position. Similary, <code>top: 10px</code> will position our element 10 pixels away from that parent element's bottom side.
     </p>
     <br>
     <h2>Fixed Position</h2>
@@ -75,7 +75,7 @@
         <code>position: fixed</code> allows us to position an element relative to the viewport, which is the visible area of a web page that we see on our browsers. This means that the element will stay in the same position even when the page is scrolled.
     </p>
     <p>
-        <code>position: fixed</code> works quite similar with <code>position: absolute</code> in that it takes the element out of the normal document flow and by default, places it in front of where it was previously with the space the element left behind being taken up by the elements that are rendered after it, provided that these elements are following the normal document flow.
+        <code>position: fixed</code> works quite similar to <code>position: absolute</code> in that it takes the element out of the normal document flow and by default, places it in front of where it would have been with the space element left behind being taken up by the elements that are rendered after it, provided that these elements are following the normal document flow.
     </p>
     <p>
         The main difference is that since the element is now fixed in its position relative to the viewport, it will be visible in our browser or screen no matter how much we scroll unlike with elements with <code>position: absolute</code> which will become out of view once you scroll past it.
@@ -95,19 +95,19 @@
     </p>
     <p>
         Click the buttons to change the <code>position</code> of the orange box and see what it would look like in these positions at <code>right: 10px</code>.
-        All other sides are set at <code>0px</code> to make it simpler and easier to see the differences.
-        Note that the grey box is the parent element of the orange box and the entirety of the white space of the codepen is the viewport.
+        All other sides are set at <code>0px</code> to make it easier to see the differences.
+        Note that the grey box is the parent element of the orange box and has a <code>position: relative</code> attribute.
     </p>
     <p>
         The default is <code>static</code> and what it would look like if the orange box is following the normal document flow.
         Both the pink and blue boxes are <code>static</code> so you can see how the blue box moves upwards once you take the orange box out of the normal document flow by clicking either the <code>absolute</code> or <code>fixed</code> buttons.
     </p>
     <p class="codepen" data-height="655" data-theme-id="dark" data-default-tab="result" data-user="andria-hibe" data-slug-hash="eYOjOvq" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Relative, Absolute, and Fixed Positioning">
-            <span>See the Pen <a href="https://codepen.io/andria-hibe/pen/eYOjOvq/">
-            Relative, Absolute, and Fixed Positioning</a> by Andria Hibe (<a href="https://codepen.io/andria-hibe">@andria-hibe</a>)
-            on <a href="https://codepen.io">CodePen</a>.</span>
-          </p>
-          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        <span>See the Pen <a href="https://codepen.io/andria-hibe/pen/eYOjOvq/">
+        Relative, Absolute, and Fixed Positioning</a> by Andria Hibe (<a href="https://codepen.io/andria-hibe">@andria-hibe</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
   </div>
 
