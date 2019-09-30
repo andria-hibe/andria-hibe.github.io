@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andria Hibe </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel='icon' href='../favicon.ico' type='image/x-icon'>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+13px&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true&amp;skin=desert&amp;lang=css" defer=""></script>
+  </head>
+
+  <body>
+    <div class="topnav">
+        <a href="https://andria-hibe.github.io">Home</a>
+        <a class="active" href="https://andria-hibe.github.io/blog/technical-blog-index">Technical Blog</a>
+        <a href="https://andria-hibe.github.io/blog/cultural-blog-index">Cultural Blog</a>
+    </div>
+
+  <div id="hero-header">
+    <h1 class="hero-text">Andria Hibe</h1>
+      <p class="hero-paragraph">DevAcademy Foundations Blog</p>
+  </div>
+
+  <div id="content">
+    <h1>Basic JavaScript Concepts</h1>
+    <h3>19 September 2019</h3>
+    <h4>
+        An analogy to describe the differences between HTML and CSS
+    </h4>
+    <p>
+        I recently moved to a new empty flat and as it was the first time that I was moving into an unfurnished apartment, it’s been an adventure trying to figure out how I want my living space to look and feel.
+    </p>
+    <p>
+        First up, HTML! The flat has a kitchen/living space, bedroom, bathroom, corridor, and a small front deck.
+        This will make up our webpages for our website. Let’s focus on the kitchen/living space.
+    </p>
+    <p>
+        The space came with cabinets, a sink, and a stovetop-oven.
+        I know I need a couch, desk, refrigerator, dining table, and decoration.
+        I don’t have any of these yet and so I don’t know what they look like yet but I have an idea where I want to put them so I map them out either on a piece of paper or in my head.
+        All these furniture and appliances make up the content of our webpage.
+        They can be texts, images, gifs, videos, or whatever else we want to put in our page.
+    </p>
+    <p>
+        Once I have a plan in place of what things I need and where I would put them I can then focus more on the look that I want.
+        This is where CSS comes in.
+    </p>
+    <p>
+        I know I want a three-seater couch (preferably blue) that is comfortable and with padded sides, a fridge that is medium-sized and a nice shade of sleek grey, and a desk that will have space for a desktop as well as for my crafts.
+        I need a wooden dining table that can sit four people and lastly I needed plants and wall art of various shapes and sizes to zhuzh the place up.
+        CSS is what defines how each part of our webpage look, whether it’s the color, shape, position, size, and even how far apart each of them are from each other.
+    </p>
+    <p>
+        Technically, we can just go inside a room, throw in some furniture and appliances blind-folded and call it a day just as we can have a webpage with just HTML.
+        But CSS allows us to actually design our webpage the way we want it just as we want to design our living space how we want it.
+    </p>
+
+    <h4>
+        Explain control flow and loops using an example process from everyday life
+    </h4>
+    <p>
+        As I dream to be the kind of person who just whips up baked goods during a boring afternoon, I am currently seeing control flow and loops in the context of making cookies.
+    </p>
+    <p>
+        Baking is a science, measurements need to be accurate and you usually need to strictly follow each step one after the other lest a baking disaster occurs.
+        Similar to how we need to pay attention to the control flow lest we muck up in how we write our code and end up in error hell.
+    </p>
+    <p>
+        First off, you preheat the oven to make sure it’s ready and hot when you need it.
+        For chocolate chip cookies, you then mix butter and sugar until creamy.
+        As I mostly do everything by hand, this means doing the mixing motion again and again and again as if on a loop (wink) until I get the desired consistency.
+        You can then mix in your vanilla extract and egg (if more than one egg do it one at a time!).
+    </p>
+    <p>
+        Afterwards we move on to our dry ingredient and sift in our flour, baking soda, and salt.
+        Lastly, we add in our chocolate chips before then scooping it in our baking tray depending on the cookie size we want and putting it into the oven for the appropriate amount of time. 
+    </p>
+    <p>
+        If you’re the best kind of person in the world, you can then do this every day so you can never run out of baked goods and you can be everyone’s favourite person (provided you share, of course).
+    </p>
+    
+    <h4>
+        Describe what the DOM is and an example of how you might interact with it
+    </h4>
+    <p>
+        The Document Object Model (DOM) is the hierarchical structure that our web browser uses to make sense of the HTML, CSS, and Javascript that we use to create our webpages.
+    </p>
+    <p>
+        The DOM is made up of nodes which is literally everything that makes up our webpage including elements, attributes, content, documentation, comments on our code, and myriad other things (seriously, there’s so many).
+    </p>
+    <p>
+        Simply put, the DOM connects our HTML and CSS with Javascipt and allows us interact with our web document to do all sorts of cool stuff.
+    </p>
+    <p>
+        We can interact with the DOM the same way we code everything else, by using specific commands such as the <code>document.getElementById(<i>id</i>)</code> which allows us to find HTML elements using the ID we assign to them.
+        We can also change HTML elements like with the <code>element.setAttribute(<i>attribute, value</i>)</code> method, which allows us to change the attribute value of an element (e.g. change <code>position: relative</code> to <code>position: absolute</code>), or even create an HTML element with <code>document.createElement(<i>element</i>)</code> or remove an HTML element with <code>document.removeChild(<i>element</i>)</code>.
+        And that’s just the tip of the iceberg!
+    </p>
+
+    <h4>
+        Explain the difference between accessing data from arrays and objects
+    </h4>
+    <p>
+        We use arrays and objects to collect data into a group.
+        Accessing the data from either of them have a lot of similarities as we tend to use bracket notation for both but the difference actually tells us when to use one or the other.
+    </p>
+    <p>
+        Arrays are used whenever we need to have a list of data in one variable.
+        The information is therefore accessed based on the order that they are listed.
+        This means that we use the index to retrieve whatever data we need.
+        Bracket notation is used to access the data contained in an array.
+    </p>
+    <p>
+        Arrays use zero-based indexing which means that to retrieve the first entry in an array, we use 0 instead of 1.
+        For example, if we have an array that lists our favourite book series:
+        <pre class="prettyprint">
+
+const books = ['Discworld', 'The Lord of the Rings', 'The Chronicles of Narnia'];
+
+console.log(books[0]);
+        </pre>
+        and we want to access Discworld, we would use <code>books[0]</code>.
+    </p>
+    <p>
+        The informations in an object, on the other hand, tend to be organised based on labels. Objects are used to represent “things” that has properties and we use <code>key: value</code> pairs to store the different properties. We can use both dot and bracket notation to access the array in an object.
+    </p>
+    <p>
+        Using a similar example to the above, if we have the following object listing our favourite book series:
+    <pre class="prettyprint">
+
+const series = {
+    'Discworld': {
+        'author': 'Terry Pratchett',
+        'number of books': 41,
+        'first three books in the series': [
+            'The Colour of Magic',
+            'The Light Fantastic',
+            'Equal Rites'
+        ]
+    },
+    'The Lord of the Rings': {
+        'author': 'J.R.R. Tolkien',
+        'number of books': 3,
+        'first three books in the series': [
+            'The Fellowship of the Ring',
+            'The Two Towers',
+            'The Return of the King'
+        ]
+    },
+    'The Chronicles of Narnia': {
+        'author': 'C.S. Lewis',
+        'number of books': 7,
+        'first three books in the series': [
+            'The Lion, the Witch, and the Wardrobe',
+            'Prince Caspian',
+            'The Voyage of the Dawn Treader'
+        ]
+    }
+}
+
+console.log(series['The Chronicles of Narnia'].author);
+        </pre>
+    </p>
+    <p>
+        We can access the author of ‘The Chronicles of Narnia’ series by using <code>books[‘The Chronicles of Narnia’].author</code>.
+    </p>
+    <h4>
+        Explain what functions are and why they are useful
+    </h4>
+    <p>
+        I like to imagine functions as cute tiny little robots in a factory who has their own very specific instructions that they do over and over again so we can make our product (maybe cookies. 
+    </p>
+    <p>
+        Functions allow us to reuse code again and again and again without the need to retype it every time, similar to how we can have a robot that packs our cookies and no matter if we move it from the chocolate chip department to the peanut butter department it can still pack those cookies.
+        Once we place Mr. Robot on the factory line, whenever a cookie is placed in front of him he will pack that delicious treat right up.
+    </p>
+    <p>
+        Oftentimes, when coding we would like to use a piece of code repeatedly.
+        Perhaps in different locations (Mr. Robot and the Journey to a Different Factory) or perhaps with different arguments (Mr. Robot’s New Friend, the Oatmeal Cookie).
+        This saves us time and lessens possible complications and mistakes in our code (e.g. a dreaded typo in the fifth time you typed the same code over and over again).
+    </p>
+
+  </div>
+
+    <div id="footer">
+        <a href=mailto:andriacohibe@gmail.com>
+            <img class="images" src="../images/paper-plane-solid.svg" alt="Email icon"></a>
+        <a href=https://github.com/andria-hibe target="_blank">
+            <img class="images" src="../images/github-alt-brands.svg" alt="GitHub icon"></a>
+        <a href=https://www.linkedin.com/in/andriacristiahibe/ target="_blank">
+            <img class="images" src="../images/linkedin-brands.svg" alt="LinkedIn icon"></a>
+    </div> 
+        
+</body>
+</html>
