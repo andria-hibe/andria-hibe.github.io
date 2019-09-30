@@ -108,6 +108,12 @@ h3 {
   font-family: 'Lato', sans-serif;
   margin-bottom: 5px;
 }
+h4 {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
 p {
   font-size: 16px;
 }
@@ -117,6 +123,7 @@ code {
   font-family: "Roboto Mono", monospace;
   font-size: 14px;
 }
+
 #footer {
     margin-top: 5px;
     text-align: center;
@@ -153,4 +160,10 @@ a {
 a:hover {
     color: #2b64a9;
     text-decoration: underline;
+}
+.code-box {
+  background-color: grey;
+  color: white;
+  display: block;
+  padding: 20px;
 }
